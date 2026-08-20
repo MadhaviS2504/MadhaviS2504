@@ -1,4 +1,4 @@
-# Hi 👋, I'm Madhavi S
+# Hi 👋, I'm Madhavi Surapuraju
 
 A passionate **Data Scientist | ML/DL Engineer | Cloud Computing Enthusiast** currently working on innovative projects involving cloud infrastructure, data science, and machine learning deployment.
 
