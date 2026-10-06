@@ -1,135 +1,163 @@
-# Hi 👋, I'm Madhavi Surapuraju
+# Hi, I'm Madhavi Surapuraju
 
-A passionate **Data Scientist | ML/DL Engineer | Cloud Computing Enthusiast** currently working on innovative projects involving cloud infrastructure, data science, and machine learning deployment.
+AI / GenAI Engineer | ML Engineer | Full Stack Engineer
 
-## 🚀 Currently Working On
-- 🔍 Building end-to-end ML pipelines with MLOps best practices
-- ☁️ Cloud infrastructure and deployment solutions
-- 🤖 Deep learning models for real-world applications
-- 📊 Advanced data analytics and business intelligence
+13+ years of production engineering experience across Banking and Healthcare, with hands-on delivery of RAG systems, agentic AI, computer vision, MLOps, and production ML pipelines.
 
-## 🎯 About Me
-
-I am a Data Science enthusiast with **3+ years of experience** in driving innovation and change through data-driven insights and intelligent solutions. I am passionate about:
-- Building scalable ML/DL solutions
-- Cloud-native development (AWS, GCP, Azure)
-- Data engineering and pipeline optimization
-- Transforming complex problems into elegant solutions
-
-**Currently focused on:** MLOps, Model Deployment, and Cloud Computing
-
-Connect with me on **LinkedIn** or check out my work on GitHub!
+Hyderabad, India • +91-9959578125 • madhavis.2504@gmail.com • [GitHub](https://github.com/MadhaviS2504)
 
 ---
 
-## 💼 Tech Stack
+## Featured AI/ML Projects
 
-### Languages & Frameworks
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
+### 1) Tourism Package Purchase Prediction — End-to-End MLOps Pipeline
+Repository: [Tourism_MLOps_Pipeline](https://github.com/MadhaviS2504/Tourism_MLOps_Pipeline)
 
-### Data Science & ML
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/scikit%20learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
+Built a production-style machine learning workflow from raw data to deployment. The project covers leakage-safe preprocessing, model comparison, experiment tracking, model registration, CI/CD automation, and containerized interactive inference.
 
-### Cloud & DevOps
-![AWS](https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white)
+Highlights:
+- Stratified 80/20 split and training-only imputation for leakage-safe preprocessing
+- Compared Decision Tree, Random Forest, and XGBoost models with GridSearchCV
+- Tracked experiments and artifacts using MLflow
+- Registered and published the best model via Hugging Face Hub
+- Delivered a Dockerized Streamlit predictor and GitHub Actions CI/CD workflow
 
-### Databases & Big Data
-![MySQL](https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white)
+Tech: Python, pandas, scikit-learn, XGBoost, MLflow, Hugging Face, Docker, Streamlit, GitHub Actions
 
-### Web & Frontend
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34C26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+---
+
+### 2) Medical Assistant — Grounded RAG over 4,114-Page Medical Reference
+Repository: [Natural-Language-Processing-with-Generative-AI-RAG-Project](https://github.com/MadhaviS2504/Natural-Language-Processing-with-Generative-AI-RAG-Project)
+
+Designed a source-grounded medical assistant for evidence-based healthcare Q&A using RAG. The system retrieves relevant medical context, constrains generation, and reduces hallucination risk by requiring answers to be grounded in retrieved evidence.
+
+Highlights:
+- Processed a 4,114-page medical reference with PyMuPDF and LangChain
+- Chunked content into 8,492 retrieval-ready segments using token-aware chunking
+- Generated embeddings with thenlper/gte-large and stored them in ChromaDB
+- Retrieved top 3 relevant passages for each query to ground model output
+- Integrated Mistral-7B via llama.cpp with context-constrained generation
+- Built LLM-as-a-Judge evaluation for groundedness and relevance
+
+Tech: Python, LangChain, RAG, PyMuPDF, ChromaDB, Sentence Transformers, Mistral, llama.cpp, Hugging Face
+
+---
+
+### 3) NewsFindr — Agentic AI Retrieval, Validation & SQL Guardrails
+Built an AI workflow for retrieving and validating credible news results, then summarizing personalized insights while filtering low-authority or irrelevant sources.
+
+Highlights:
+- 4-tool ReAct agent for query expansion, web retrieval, credibility filtering, and summary generation
+- Read-only SQL agent with DML protections to ensure safe database interactions
+- Dual-LLM architecture using Groq for deterministic tool reasoning and generative execution
+- SQLite-based response cache and retry-with-backoff for rate-limit resilience
+
+Tech: LangChain, ReAct, Groq, SQLAgent, SQLite, DuckDuckGo Search API, Pydantic
+
+---
+
+### 4) Pneumonia Detection — CNN & Transfer Learning
+Built a computer vision solution to classify chest X-ray images for pneumonia detection using DICOM preprocessing and deep learning models.
+
+Highlights:
+- Processed DICOM X-rays with pydicom and OpenCV
+- Designed custom CNN architecture and benchmarked VGG16, ResNet50, and InceptionV3
+- Selected fine-tuned InceptionV3 as the best-performing model
+- Delivered REST API and Streamlit UI for inference
+
+Tech: Python, TensorFlow/Keras, CNN, Transfer Learning, pydicom, OpenCV, Flask, Streamlit
+
+---
+
+## Professional Summary
+
+AI/ML and GenAI-focused engineer with 13+ years of production software engineering experience across Banking and Healthcare. Experienced in building enterprise-grade APIs, data-processing services, MLOps pipelines, evaluation workflows, and productionized AI applications.
+
+I have delivered solutions spanning RAG, agentic AI, computer vision, classical ML, and cloud-based deployment using Python, Java, SQL, AWS, Docker, GitHub Actions, and modern AI frameworks.
+
+---
+
+## Technical Skills
+
+### Core AI / ML
+- Machine learning: Classification, Decision Trees, Random Forest, XGBoost, GridSearchCV
+- Deep learning: CNNs, transfer learning, TensorFlow/Keras
+- Generative AI: RAG, prompt engineering, grounded generation, LLM-as-a-Judge
+- Agentic AI: ReAct workflows, multi-tool planning, tool calling, SQL agents
+- Embeddings & retrieval: Sentence Transformers, ChromaDB, FAISS, vector search
 
 ### Tools & Platforms
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37726?style=for-the-badge&logo=jupyter&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+- Python, Java, SQL, JavaScript, TypeScript
+- LangChain, scikit-learn, pandas, PyMuPDF, OpenCV, pydicom
+- MLflow, Hugging Face Hub, Docker, Kubernetes, AWS
+- Flask, Spring Boot, REST APIs, Streamlit
+- GitHub Actions, Jenkins, CI/CD pipelines
 
 ---
 
-## 📊 Skills Overview
+## Professional Experience
 
-**Core Competencies:**
-- Machine Learning & Deep Learning
-- Data Analysis & Visualization
-- Cloud Architecture & Deployment
-- MLOps & Model Management
-- Big Data Processing
-- Database Design & Management
-- Full-Stack Development
+### JPMorganChase — Software Engineer III / Senior Software Engineer
+Hyderabad, India | Aug 2022 – Present
 
-**Domains:**
-- Data Science
-- AI/ML Engineering
-- Cloud Computing
-- DevOps & CI/CD
-- Business Intelligence
+- Contribute to firmwide data processing and publication services for a global financial platform
+- Build scalable Java/Spring Boot APIs and SQL Server/Oracle database workflows
+- Own delivery from requirement gathering through implementation, testing, and production release
+- Support production incident diagnosis and root-cause analysis under tight SLAs
+- Use GitHub Copilot to accelerate code generation and validation while maintaining peer-review standards
 
----
+### Tata Consultancy Services — Associate Consultant / IT Analyst
+Hyderabad, India | Apr 2016 – Aug 2022
 
-## 📈 GitHub Stats
+- Delivered healthcare applications for DaVita and McKesson using Java, Spring Boot, Angular, TypeScript, and REST APIs
+- Owned end-to-end feature delivery for healthcare modules and supported production-grade releases
+- Authored design documents, collaborated with business stakeholders, and mentored new team members
 
-<div align="center">
-  
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MadhaviS2504&theme=dark&show_icons=true&hide_border=true)
+### Kantar GDC — Web Developer
+Hyderabad, India | Nov 2012 – Apr 2016
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=MadhaviS2504&theme=dark&layout=compact&hide_border=true)
-
-</div>
+- Developed web applications using AngularJS, HTML, CSS, JavaScript, and Bootstrap
+- Built reusable UI components and contributed to front-end standardization
 
 ---
 
-## 📚 Featured Projects
+## Education
 
-- **[Tourism MLOps Pipeline](https://github.com/MadhaviS2504/Tourism_MLOps_Pipeline)** - End-to-end ML pipeline for Wellness Tourism Package prediction with data cleaning, preprocessing, model training, and deployment.
-
-- **[ML Model Deployment with Docker & HuggingFace](https://github.com/MadhaviS2504/ML_Model_Deployment_Process_Docker_HF)** - Production-ready ML model deployment using Docker containerization and HuggingFace integration.
-
-- **[Python Fundamentals Bootcamp](https://github.com/MadhaviS2504/1-python-fundamentals-bootcamp)** - Comprehensive Python learning resources and bootcamp materials.
+- Post Graduate Program in Artificial Intelligence & Machine Learning — Great Learning (Aug 2025 – Sep 2026) | GPA: 4.25/5.0
+- Master of Computer Applications (MCA) — University College for Women, Koti, Osmania University | 2012 | 89.9%
+- B.Sc. (MECs) — SSB Degree College | 2009 | 80.5%
 
 ---
 
-## 🤝 Connect with Me
+## Certifications
 
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]([https://linkedin.com/in/MadhaviS2504](https://www.linkedin.com/in/madhavi-surapuraju-058111400/))
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MadhaviS2504)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:madhavis.2504@gmail.com)
-
-
-</div>
+- AWS Certified Solutions Architect — Amazon Web Services (Dec 2025)
+- VSkills Certified Angular 7 Developer — VSkills (Aug 2024)
 
 ---
 
-## 💡 Fun Facts
+## Awards & Recognition
 
-- 🎓 Continuously learning and exploring new technologies
-- 🌱 Passionate about mentoring and knowledge sharing
-- 🔧 Love building tools that solve real-world problems
-- 📖 Avid reader of tech blogs and research papers
+- Outstanding Performer of the Year — 2019
+- Teammate of the Quarter — 2021
+- Best Team Award
+- Applause Award
 
 ---
 
-<div align="center">
+## Additional Information
 
-**⭐ If you find my work interesting, feel free to star my repositories!**
+- Languages: English, Telugu
+- Passport: Valid
+- Notice period: 60 days
+- Domain expertise: Healthcare, Banking & Financial Services
 
-*Last updated: August 2026*
+---
 
-</div>
+## Connect
+
+- GitHub: [MadhaviS2504](https://github.com/MadhaviS2504)
+- Email: madhavis.2504@gmail.com
+- Mobile: +91-9959578125
+
+"Building AI solutions that matter — from research to production."
